@@ -1,0 +1,229 @@
+div#box {
+    height: 40px;
+    width: 40px;
+    border-color: white;
+    border-width: 2px;
+    margin: 20px;
+    z-index: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(250, 90, 255, 0);
+}
+
+header {
+    background-color: #780000;
+    position: relative;
+    height: 80px;
+}
+
+body.main-content {
+    background-color:#fdf0d5;
+}
+
+.icon-bar {
+    background-color:#fdf0d5;
+    height: 2px;
+    width: 25px;
+    margin-left: -6px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    margin-right: -5px;
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+    #box {
+        display: none;
+    }
+}
+
+div.offcanvas.offcanvas-start {
+    width: 200px;
+    background-image: linear-gradient(to bottom right, rgb(160, 253, 160), white);
+}
+
+div.dropdown.mt-3 {
+    width: 150px;
+    text-align: left;
+    text-decoration-color: rgb(231, 44, 231);
+}
+
+@media (max-width: 767px) {
+    div.container-fluid {
+        display: none;
+    }
+}
+
+div.portfolio {
+    margin-left: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    color:#fdf0d5;
+    text-decoration: none; /* Move text-decoration property here */
+    text-overflow: ellipsis;
+    font-weight: bold;
+    display: inline-block;
+}
+
+div.portfolio a {
+    text-decoration: none;
+    color: inherit;
+}
+
+div.item-box {
+    margin-left: 40%;
+    margin-right: 0;
+    margin-top: 25px;
+    display: inline-block;
+}
+
+div.items {
+    margin-left: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    color:#fdf0d5;
+    text-decoration: none; /* Move text-decoration property here */
+    text-overflow: ellipsis;
+    font-weight: bold;
+    display: inline-block;
+}
+
+div.items a {
+    text-decoration: none;
+    color: inherit;
+}
+
+div.items a:hover {
+    text-decoration: underline;
+    color: whitesmoke;
+}
+
+div li {
+    font-family: 'Times New Roman', Times, serif;
+    list-style-type: none;
+    font-weight: bold;
+    font-size: x-large;
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+div li a {
+    text-decoration: none;
+    color: rgb(231, 44, 231);
+}
+
+div li a:hover {
+    color: black;
+    text-decoration: underline;
+}
+/*img*/
+
+div img {
+    float: right;
+    width: 400px;
+    height: 400px;
+    margin-left: 0px;
+    margin-top: 70px;
+    margin-right: 200px;
+    border-radius: 50%;
+}
+
+.outer-circle img {
+    position: relative; 
+    animation: rotate 1.5s linear infinite;
+    padding: 0; 
+    border-radius: 50%; 
+    box-shadow: 
+        0 0 20px rgba(255, 0, 255, 0.8),
+        0 0 30px rgba(255, 0, 255, 0.6),
+        0 0 40px rgba(255, 0, 255, 0.4),
+        0 0 50px rgba(255, 0, 255, 0.2);
+}
+
+.outer-circle span {
+    border-radius: 50%;
+}
+
+.outer-circle span:nth-child(1) {
+    filter: blur(14px);
+}
+
+.outer-circle span:nth-child(2) {
+    filter: blur(21px);
+}
+
+@keyframes rotate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+/*
+div.outer-circle span {
+    border-radius: 50%;
+}
+
+div.outer-circle span:nth-child(1) {
+    filter: blur(7px);
+}
+
+div.outer-circle span:nth-child(2) {
+    filter: blur(14px);
+}
+
+.outer-circle {
+    animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+*/
+p#name {
+    margin-top: 10px;
+    color:#c1121f;
+    font-weight: 700;
+    font-style: normal;
+    text-align:left;
+    font-size: 70px;
+    margin:0px 0 5px 200px;
+}
+p.hello{
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    color:#023069;
+    margin:150px 0 5px 200px;
+}
+p.work-title {
+    color: #023069;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    text-align: left;
+    margin:0px 0 5px 200px;
+}
+
+p.work-description {
+    color: #669bbc;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+    width: 400px;
+    margin: 0 0 8px 200px;
+    line-height: 80%;
+}
+div.work{
+    float:left;
+}
