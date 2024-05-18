@@ -80,8 +80,8 @@ div.item-box {
 }
 
 div.items {
-    margin-left: 30px;
-    font-family: 'Times New Roman', Times, serif;
+    margin-right: 30px;
+    font-family: "Poppins", sans-serif;
     font-size: larger;
     color:#fdf0d5;
     text-decoration: none; /* Move text-decoration property here */
@@ -101,7 +101,7 @@ div.items a:hover {
 }
 
 div li {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Poppins", sans-serif;
     list-style-type: none;
     font-weight: bold;
     font-size: x-large;
@@ -127,7 +127,7 @@ div img {
     height: 400px;
     margin-left: 0px;
     margin-top: 70px;
-    margin-right: 200px;
+    margin-right: 100px;
     border-radius: 50%;
 }
 
@@ -191,6 +191,7 @@ div.outer-circle span:nth-child(2) {
 }
 */
 p#name {
+    font-family: "Poppins", sans-serif;
     margin-top: 10px;
     color:#c1121f;
     font-weight: 700;
@@ -200,6 +201,7 @@ p#name {
     margin:0px 0 5px 200px;
 }
 p.hello{
+    font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 30px;
@@ -207,6 +209,7 @@ p.hello{
     margin:150px 0 5px 200px;
 }
 p.work-title {
+    font-family: "Poppins", sans-serif;
     color: #023069;
     font-weight: 700;
     font-style: normal;
@@ -216,6 +219,7 @@ p.work-title {
 }
 
 p.work-description {
+    font-family: "Poppins", sans-serif;
     color: #669bbc;
     font-size: 20px;
     font-weight: 500;
@@ -226,4 +230,5 @@ p.work-description {
 }
 div.work{
     float:left;
+
 }
