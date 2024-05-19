@@ -1,3 +1,4 @@
+/*
 div#box {
     height: 40px;
     width: 40px;
@@ -11,7 +12,7 @@ div#box {
     left: 0;
     background: rgb(250, 90, 255, 0);
 }
-
+*/
 header {
     background-color: #780000;
     position: relative;
@@ -19,9 +20,9 @@ header {
 }
 
 body.main-content {
-    background-color:#fdf0d5;
+    background-color:#fff8ef;
 }
-
+/*
 .icon-bar {
     background-color:#fdf0d5;
     height: 2px;
@@ -32,7 +33,7 @@ body.main-content {
     margin-right: -5px;
     padding: 0;
 }
-
+*/
 @media (min-width: 768px) {
     #box {
         display: none;
@@ -43,13 +44,13 @@ div.offcanvas.offcanvas-start {
     width: 200px;
     background-image: linear-gradient(to bottom right, rgb(160, 253, 160), white);
 }
-
+/*
 div.dropdown.mt-3 {
     width: 150px;
     text-align: left;
     text-decoration-color: rgb(231, 44, 231);
 }
-
+*/
 @media (max-width: 767px) {
     div.container-fluid {
         display: none;
@@ -57,14 +58,26 @@ div.dropdown.mt-3 {
 }
 
 div.portfolio {
-    margin-left: 100px;
-    font-family: 'Times New Roman', Times, serif;
+    margin-left: 150px;
+    font-family: "Poppins", sans-serif;
     font-size: larger;
     color:#fdf0d5;
-    text-decoration: none; /* Move text-decoration property here */
+    text-decoration: none; 
     text-overflow: ellipsis;
     font-weight: bold;
     display: inline-block;
+    opacity:0;
+    animation:slideright .5s ease forwards;
+}
+@keyframes slideright {
+    0%{
+        transform:translateX(-100px);
+        opacity:0;
+    }
+    100%{
+        tranform:translateX(0px);
+        opacity:1;
+    }
 }
 
 div.portfolio a {
@@ -73,7 +86,7 @@ div.portfolio a {
 }
 
 div.item-box {
-    margin-left: 40%;
+    margin-left: 30%;
     margin-right: 0;
     margin-top: 25px;
     display: inline-block;
@@ -84,10 +97,12 @@ div.items {
     font-family: "Poppins", sans-serif;
     font-size: larger;
     color:#fdf0d5;
-    text-decoration: none; /* Move text-decoration property here */
+    text-decoration: none;
     text-overflow: ellipsis;
     font-weight: bold;
     display: inline-block;
+    opacity:0;
+    animation: slidetop .5s ease forwards;
 }
 
 div.items a {
@@ -123,14 +138,19 @@ div li a:hover {
 
 div img {
     float: right;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     margin-left: 0px;
     margin-top: 70px;
-    margin-right: 100px;
+    margin-right: 200px;
     border-radius: 50%;
+   
 }
-
+div.outer-circle{
+    opacity:0;
+    animation: slideleft .7s ease forwards;
+    animation-delay:.7s;
+}
 .outer-circle img {
     position: relative; 
     animation: rotate 1.5s linear infinite;
@@ -194,41 +214,167 @@ p#name {
     font-family: "Poppins", sans-serif;
     margin-top: 10px;
     color:#c1121f;
-    font-weight: 700;
+    font-weight: 600;
     font-style: normal;
     text-align:left;
-    font-size: 70px;
-    margin:0px 0 5px 200px;
+    font-size: 60px;
+    margin:0px 0 5px 150px;
+    opacity:0;
+    animation: slideright .7s ease forwards;
+    animation-delay: .7s;
 }
 p.hello{
     font-family: "Poppins", sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     font-style: normal;
     font-size: 30px;
     color:#023069;
-    margin:150px 0 5px 200px;
+    margin:100px 0 5px 150px;
+    opacity:0;
+    animation: slidebottom .5s ease forwards;
+    animation-delay: 0.3s;
+}
+@keyframes slidebottom{
+    0%{
+        transform:translateY(-100px);
+        opacity:0;
+    }
+    100%{
+        transform:translateY(0px);
+        opacity:1;
+    }
+}
+@keyframes slideleft{
+    0%{
+        transform:translatex(100px);
+        opacity:0;
+    }
+    100%{
+        transform:translateY(0px);
+        opacity:1;
+    }
 }
 p.work-title {
     font-family: "Poppins", sans-serif;
     color: #023069;
-    font-weight: 700;
+    font-weight: 500;
     font-style: normal;
     font-size: 30px;
     text-align: left;
-    margin:0px 0 5px 200px;
+    margin:0px 0 5px 150px;
+    opacity:0;
+    animation: slidebottom .7s ease forwards;
+    animation-delay: 1s;
+
 }
 
 p.work-description {
     font-family: "Poppins", sans-serif;
-    color: #669bbc;
+    color: #FF6E4A;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
     text-align: left;
     width: 400px;
-    margin: 0 0 8px 200px;
-    line-height: 80%;
+    margin: 10px 0 8px 150px;
+    line-height: 90%;
+    opacity:0;
+    animation:slideleft .7s ease forwards;
+    animation-delay:1.3s;
 }
 div.work{
     float:left;
 
 }
+span.auto-type{
+    color:#FC6679;
+}
+@keyframes slidetop {
+    0%{
+        transform:translateY(100px);
+        opacity:0;
+    }
+    100%{
+        tranform:translateY(0px);
+        opacity:1;
+    }
+}
+div.socials{
+    margin-left:145px;
+    opacity: 0;
+    animation: slideright .7s ease forwards;
+    animation-delay: 1.3s;
+}
+
+.fa-facebook {
+    width:25px;
+    height:25px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+
+    background: #3B5998;
+    color: white;
+    margin:5px;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+    width:25px;
+    height:25px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    margin:5px;
+  }
+  
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+    width:25px;
+    height:25px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    margin:5px;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+    width:25px;
+    height:25px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    margin:5px;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+    width:25px;
+    height:25px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    margin:5px;
+  }
+  
+  .fa-pinterest {
+    background: #cb2027;
+    color: white;
+    width:25px;
+    height:25px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    margin:5px;
+  }
