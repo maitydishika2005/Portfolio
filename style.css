@@ -144,7 +144,7 @@ div img {
     margin-top: 70px;
     margin-right: 200px;
     border-radius: 50%;
-   
+   z-index: 9;
 }
 div.outer-circle{
     opacity:0;
@@ -157,10 +157,10 @@ div.outer-circle{
     padding: 0; 
     border-radius: 50%; 
     box-shadow: 
-        0 0 20px rgba(255, 0, 255, 0.8),
-        0 0 30px rgba(255, 0, 255, 0.6),
-        0 0 40px rgba(255, 0, 255, 0.4),
-        0 0 50px rgba(255, 0, 255, 0.2);
+    0 0 20px rgba(255, 0, 255, 0.8),
+    0 0 30px rgba(255, 0, 255, 0.6),
+    0 0 40px rgba(255, 0, 255, 0.4),
+    0 0 50px rgba(255, 0, 255, 0.2);
 }
 
 .outer-circle span {
@@ -174,7 +174,6 @@ div.outer-circle{
 .outer-circle span:nth-child(2) {
     filter: blur(21px);
 }
-
 @keyframes rotate {
     0% {
         filter: hue-rotate(0deg);
@@ -317,20 +316,6 @@ div.socials{
     color: white;
     margin:5px;
   }
-  
-  .fa-twitter {
-    background: #55ACEE;
-    color: white;
-    width:25px;
-    height:25px;
-    border-radius: 50%;
-    text-align: center;
-    text-decoration: none;
-    padding: 5px;
-    margin:5px;
-  }
-  
-
   .fa-linkedin {
     background: #007bb5;
     color: white;
@@ -377,4 +362,36 @@ div.socials{
     text-decoration: none;
     padding: 5px;
     margin:5px;
+  }
+  
+  .fa-facebook:hover{
+    color:#750707;
+    background: #fff8ef;
+    border:1px solid #750707;
+    text-decoration: none;
+  }
+  
+  .fa-pinterest:hover{
+    color:#750707;
+    background: #fff8ef;
+    border:1px solid #750707;
+    text-decoration: none;
+  }
+  .fa-instagram:hover{
+    color:#750707;
+    background: #fff8ef;
+    border:1px solid #750707;
+    text-decoration: none;
+  }
+  .fa-youtube:hover{
+    color:#750707;
+    background: #fff8ef;
+    border:1px solid #750707;
+    text-decoration: none;
+  }
+  .fa-linkedin:hover{
+    color:#750707;
+    background: #fff8ef;
+    border:1px solid #750707;
+    text-decoration: none;
   }
