@@ -24,9 +24,11 @@ var i = 0;
     }
     */
 
-    var typed = new Typed('.element', {
-      strings: ["First sentence.", "Second sentence."],
-      typeSpeed: 30
+    var typed = new Typed(".auto-type", {
+      strings: ["Frontend-Developer", "Backend-Developer","Fullstack-Developer"],
+      typeSpeed: 150,
+      backspeed: 150,
+      loop:true
     });
 
 });
