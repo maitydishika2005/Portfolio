@@ -15,12 +15,15 @@ div#box {
 */
 header {
     background-color: #780000;
-    position: relative;
+    position: fixed;
     height: 80px;
+    width:100%;
+    z-index: 9;
 }
 
 body.main-content {
     background-color:#fff8ef;
+    position: relative;
 }
 /*
 .icon-bar {
@@ -39,12 +42,12 @@ body.main-content {
         display: none;
     }
 }
-
+/*
 div.offcanvas.offcanvas-start {
     width: 200px;
     background-image: linear-gradient(to bottom right, rgb(160, 253, 160), white);
 }
-/*
+
 div.dropdown.mt-3 {
     width: 150px;
     text-align: left;
@@ -85,7 +88,7 @@ div.portfolio a {
     color: inherit;
 }
 
-div.item-box {
+div#item-box {
     margin-left: 30%;
     margin-right: 0;
     margin-top: 25px;
@@ -104,6 +107,10 @@ div.items {
     opacity:0;
     animation: slidetop .5s ease forwards;
 }
+.active, .items:hover {
+    background-color: #666;
+    color: white;
+  }
 
 div.items a {
     text-decoration: none;
@@ -124,7 +131,7 @@ div li {
     margin-left: 20px;
     margin-bottom: 20px;
 }
-
+/*
 div li a {
     text-decoration: none;
     color: rgb(231, 44, 231);
@@ -134,24 +141,28 @@ div li a:hover {
     color: black;
     text-decoration: underline;
 }
+*/
 /*img*/
+section3home-content{
+    height:600px;
+}
 
-div img {
-    float: right;
+section#home-content div img {
+    
     width: 300px;
     height: 300px;
-    margin-left: 0px;
-    margin-top: 70px;
+    margin-left: 150px;
+    margin-top: 170px;
     margin-right: 200px;
     border-radius: 50%;
-   z-index: 9;
+    z-index: 9;
 }
-div.outer-circle{
+ div#outer-circle{
     opacity:0;
     animation: slideleft .7s ease forwards;
     animation-delay:.7s;
 }
-.outer-circle img {
+ div#outer-circle img {
     position: relative; 
     animation: rotate 1.5s linear infinite;
     padding: 0; 
@@ -228,7 +239,7 @@ p.hello{
     font-style: normal;
     font-size: 30px;
     color:#023069;
-    margin:100px 0 5px 150px;
+    margin:170px 0 5px 150px;
     opacity:0;
     animation: slidebottom .5s ease forwards;
     animation-delay: 0.3s;
@@ -280,10 +291,7 @@ p.work-description {
     animation:slideleft .7s ease forwards;
     animation-delay:1.3s;
 }
-div.work{
-    float:left;
 
-}
 span.auto-type{
     color:#FC6679;
 }
@@ -394,4 +402,57 @@ div.socials{
     background: #fff8ef;
     border:1px solid #750707;
     text-decoration: none;
+  }
+  /*about*/
+  section#about-content{
+    height:600px;
+}
+
+  section#about-content div#outer-circle img {
+    width: 300px;
+    height: 300px;
+    margin-left: 150px;
+    margin-top:200px;
+    margin-right: 0;
+    border-radius: 50%;
+    z-index: 9;
+  }
+div#about{
+   width:500px;
+   margin-right:100px;
+   margin-left:-30px;
+   margin-top:200px;
+   margin-bottom: 200px;
+  }
+
+section#skills-content{
+    height:600px;
+    align-items: center;
+}
+
+section#services-content{
+    height:600px;
+  }
+  
+  section#services-content div.row{
+    padding-left:80px;
+    padding-right:50px;
+    padding-top:30px;
+  }
+  #service-list {
+    width:300px;
+    margin-right:50px;
+    margin-left:50px;
+    text-align: left;
+   padding:10px;
+   border:solid black 2px;
+  }
+
+  section#project-content{
+    height:600px;
+    align-items: center;
+  }
+  section#contact-content{
+    height:600px;
+    align-items: center;
   }
